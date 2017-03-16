@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.line {
+  fill: none;
+  stroke: gray;
+  stroke-width: 1.5px;
+}
+
+body {
+  font: 11px sans-serif;
+  font-family: "avenir next",sans-serif;
+}
+img{
+  height: 300px;
+}
+
+h1{
+  margin: 40px;
+  font-size: 30pt;
+}
+
+div {
+  margin: 40px;
+  display: inline-block;
+  float: left;
+}
+
+p {
+  text-align: right;
+  margin: 0px;
+  font-size: 30px;
+
+}
+
+
+#time {
+  height: 30px;
+  font-family: Avenir Next Condensed,sans-serif;
+
+}
+
+#temperature {
+  font-size: 72px;
+  height: 84px;
+  font-weight: bold;
+}
+
+#humidity {
+  text-transform: uppercase;
+  font-family: Avenir Next Condensed,sans-serif;
+  font-weight: bold;
+}
+
+#h-status {
+  font-size: 18px;
+}
+
+
+</style>
+<body>
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <title>Current Conditions</title>
+  <h1>Current Indoor Conditions</h1>
+
+<svg width="600" height="300"></svg>
+<!-- <img src="widget.png" alt="weather widget"> -->
+<div id = "widget">
+  <p id =time></p>
+  <p id = "temperature"></p>
+  <p id = "humidity"></p>
+  <p id = "h-status">Humidifier Status: <button>OFF</button></p>
+
+</div>
+
+
+<script src="//d3js.org/d3.v4.min.js"></script>
+<script src="amerrick.js"></script>
+
+</body>
